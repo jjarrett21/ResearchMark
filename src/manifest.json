@@ -1,0 +1,19 @@
+{
+  "name": "ResearchMark",
+  "description": "Saves all the tabs in a window, for users who want to save all their research pages.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "bookmarks",
+    "contextMenus"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
